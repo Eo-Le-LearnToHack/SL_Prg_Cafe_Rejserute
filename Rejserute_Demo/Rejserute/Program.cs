@@ -13,8 +13,11 @@ namespace Rejserute
 
         public static void Main(string[] args)
         {
-            string myText = "I Like to Move it, Move it.";
-            MovingText.YourText(myText,2, 30);
+            //string myText = "I Like to Move it, Move it.";
+            //MovingText.YourText(myText,2, 30);
+
+            Destination.CreateMatrix();
+            Console.ReadLine();
         }
     }
 }
