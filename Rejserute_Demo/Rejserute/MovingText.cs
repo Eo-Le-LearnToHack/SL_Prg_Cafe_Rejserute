@@ -31,7 +31,7 @@ namespace Rejserute
                         Console.Clear();
                         if (j % 2 == 0) { Console.BackgroundColor = ConsoleColor.Yellow; Console.ForegroundColor = ConsoleColor.Black; }
                         else if (j % 2 == 1) { Console.BackgroundColor = ConsoleColor.Black; Console.ForegroundColor = ConsoleColor.Yellow;}
-                            Console.WriteLine(MathDev.Space(j) + textDisplay.ToUpper());
+                            Console.WriteLine(MathDev.AddSpace(j) + textDisplay.ToUpper());
                         Thread.Sleep(50); //Sleep 50ms
                     }
 
@@ -40,15 +40,16 @@ namespace Rejserute
                         Console.Clear();
                         if (j % 2 == 0) { Console.BackgroundColor = ConsoleColor.Yellow; Console.ForegroundColor = ConsoleColor.Black; }
                         else if (j % 2 == 1) { Console.BackgroundColor = ConsoleColor.Black; Console.ForegroundColor = ConsoleColor.Yellow; }
-                        Console.WriteLine(MathDev.Space(j) + textDisplay.ToUpper());
+                        Console.WriteLine(MathDev.AddSpace(j) + textDisplay.ToUpper());
                         Thread.Sleep(50); //Sleep 50ms
                     }
                     MovingText.counter++;
                 }
             }//while (MovingText.counter < cycle)
-            Console.Clear();
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
+            Console.Clear();
+            counter = 0;
         }//public static void YourText(string textDisplay, int cycle, int distanceTravel)
 
 
